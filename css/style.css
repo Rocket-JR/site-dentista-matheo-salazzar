@@ -1,115 +1,103 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+/* SECTION 1 - INÍCIO */
+.header-1st-section,
+.header-1st-section * {
+  box-sizing: border-box;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    z-index: 1000;
+.header-1st-section {
+  height: 787.41px;
+  position: relative;
 }
 
-nav{
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #ffffff;
-    color: #fff;
-    padding: 10px 30px;
+.background {
+  background: #ffffff;
+  width: 1512px;
+  height: 519px;
+  position: absolute;
+  left: 321px;
+  top: 231px;
 }
 
-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section1-img-2 {
+  border-radius: 0px;
+  width: 772px;
+  height: 443px;
+  position: absolute;
+  left: 1061px;
+  top: 231px;
+  overflow: visible;
+  object-fit: cover;
 }
 
-nav ul li{
-    list-style: none;
-    margin-right: 35px;
+.section1-img-1 {
+    border-radius: 0px;
+    width: 890px;
+    height: 443px;
+    position: absolute;
+    left: 1211px;
+    top: 674px;
+    transform: translate(-890px, -443px);
+    overflow: visible;
+    object-fit: cover;}
+
+.section1-tooth-icon {
+  width: 71px;
+  height: 65px;
+  position: absolute;
+  left: 485.27px;
+  top: 633px;
+  transform-origin: 0 0;
+  transform: rotate(34.987deg) scale(1, 1);
+  object-fit: cover;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #002855;
-    font-size: 20px;
-    font-weight: 600;
+.blue-bubble-2-icon {
+  border-radius: 0px;
+  width: 402.2px;
+  height: 402.2px;
+  position: absolute;
+  left: 0px;
+  top: 439.1px;
+  transform: translate(85.98px, -100.55px);
+  overflow: visible;
+  aspect-ratio: 1;
 }
 
-.menu-mobile{
-    display: none;
+.plus-icon {
+  background: linear-gradient(
+      to left,
+      rgba(37, 137, 219, 0.5),
+      rgba(37, 137, 219, 0.5)
+    ),
+    linear-gradient(to left, rgba(37, 137, 219, 0.5), rgba(37, 137, 219, 0.5)),
+    linear-gradient(to left, rgba(37, 137, 219, 0.5), rgba(37, 137, 219, 0.5)),
+    linear-gradient(to left, rgba(37, 137, 219, 0.5), rgba(37, 137, 219, 0.5)),
+    linear-gradient(to left, rgba(37, 137, 219, 0.5), rgba(37, 137, 219, 0.5));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  position: absolute;
+  left: 1292px;
+  top: 661.03px;
+  transform-origin: 0 0;
+  transform: rotate(-15.044deg) scale(1, 1);
 }
-#menu-icon{
-    display: none;
+
+.blue-bubble-1-icon {
+  border-radius: 0px;
+  width: 402.2px;
+  height: 402.2px;
+  position: absolute;
+  left: 1602px;
+  top: 201.1px;
+  transform: translate(85.98px, -100.55px);
+  overflow: visible;
+  aspect-ratio: 1;
 }
-.menu-mobile.active {
-    display: block;
-}
-
-@media (max-width: 768px){
-    nav ul{
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        cursor: pointer;
-        background-color: #ffffff;
-    }
-
-    .icon{
-        display: none;
-    }
-
-    i{
-        cursor: pointer;
-        width: 50px;
-        color: #002855;
-    }
-
-    .menu-mobile{
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
-        color: #002855;
-    }
-
-    .menu-mobile .menu {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        background-color: #ffffff;
-        border: 1px solid #ddd;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        width: 200px;
-    }
-
-    .menu-mobile.active .menu {
-        display: block;
-    }
-
-    .menu-mobile .menu ul {
-        list-style: none;
-        padding: 10px;
-    }
-
-    .menu-mobile .menu ul li {
-        margin: 10px 0;
-    }
-
-    .menu-mobile .menu ul li a {
-        text-decoration: none;
-        color: #002855;
-        font-size: 18px;
-        font-weight: 600;
-    }
-}
+/* SECTION 1 - FIM */
