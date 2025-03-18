@@ -14,12 +14,19 @@
     <header>
         <nav>
            <div class="logo">
+
+            <a href="#"><img src="./assets/header_logo.svg" alt=""></a>
+
             <a href="#"><img src="./assets/DR-Matheo 1.svg" alt=""></a>
+
            </div>
               <div class="menu">
                 <ul>
                      <li><a href="#">Home</a></li>
-                     <li><a href="#Apresentação">Apresentação</a></li>
+
+                     <li><a href="#">Apresentação</a></li>
+      <li><a href="#Apresentação">Apresentação</a></li>
+
                      <li><a href="#">Serviços</a></li>
                      <li><a href="#">Localização</a></li>
                      <li><a href="#">Depoimentos</a></li>
@@ -29,7 +36,11 @@
                 </div>
 
                 <div class="icon">
+
+                    <img src="./assets/header_tooth-icon.svg" alt="dente">
+
                     <img src="./assets/Tooth.svg" alt="dente">
+
                 </div>
                 <i class="material-symbols-outlined" id="menu-icon">menu</i>
         </nav>
@@ -38,7 +49,11 @@
             <div class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
+
+                    <li><a href="#">Apresentação</a></li>
+
                     <li><a href="#Apresentação">Apresentação</a></li>
+
                     <li><a href="#">Serviços</a></li>
                     <li><a href="#">Localização</a></li>
                     <li><a href="#">Depoimentos</a></li>
@@ -48,6 +63,36 @@
             </div>
         </div>
     </header>
+
+    <script>
+      document.getElementById('menu-icon').addEventListener('click', function() {
+          var menuMobile = document.getElementById('menu-mobile');
+          menuMobile.classList.toggle('active');
+      });
+  </script>
+
+<!-- SEÇÃO 1 - INÍCIO -->
+    <section class="image-section">
+        <div class="image-container">
+            <img src="./assets/1section-img1.png" alt="Imagem 1" class="image image-left">
+        </div>
+        <div class="image-container">
+            <img src="./assets/1section-img2.png" alt="Imagem 2" class="image image-right">
+        </div>
+        <div class="element">
+            <img src="./assets/blue_bubble1-icon.svg" alt="">
+        </div>
+        <div class="element-2">
+            <img src="./assets/purple_bubble-icon.svg" alt="">
+        </div>
+        <div class="plus-icon">
+          <img src="./assets/plus-icon.svg">
+        </div>
+        <div class="section1-tooth-icon">
+          <img src="./assets/1section_tooth-icon.svg">
+        </div>
+    </section>
+
 
 
     <section class="image-section" >
@@ -95,5 +140,6 @@
             menuMobile.classList.toggle('active');
         });
     </script>
+
 </body>
 </html>
