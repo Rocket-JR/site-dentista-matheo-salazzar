@@ -1,81 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <title>Doutor Ricardo</title>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <nav>
-        <div class="logo">
-          <a href="#"><img src="./assets/header_logo-img.svg" alt="" /></a>
-        </div>
-        <div class="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Apresentação</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Localização</a></li>
-            <li><a href="#">Depoimentos</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Sobre</a></li>
-          </ul>
-        </div>
+        <nav>
+           <div class="logo">
+            <a href="#"><img src="./assets/header_logo.svg" alt=""></a>
+           </div>
+              <div class="menu">
+                <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Apresentação</a></li>
+                     <li><a href="#">Serviços</a></li>
+                     <li><a href="#">Localização</a></li>
+                     <li><a href="#">Depoimentos</a></li>
+                     <li><a href="#">Contato</a></li>
+                     <li><a href="#">Sobre</a></li>
+                </ul>
+                </div>
 
-        <div class="icon">
-          <img src="./assets/header_tooth-icon.svg" alt="dente" />
-        </div>
-        <i class="material-symbols-outlined" id="menu-icon">menu</i>
-      </nav>
+                <div class="icon">
+                    <img src="./assets/header_tooth-icon.svg" alt="dente">
+                </div>
+                <i class="material-symbols-outlined" id="menu-icon">menu</i>
+        </nav>
 
-      <div class="menu-mobile" id="menu-mobile">
-        <div class="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Apresentação</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Localização</a></li>
-            <li><a href="#">Depoimentos</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Sobre</a></li>
-          </ul>
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Apresentação</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Localização</a></li>
+                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </header>
     <script>
-        document.getElementById('menu-icon').addEventListener('click', function() {
-              var menuMobile = document.getElementById('menu-mobile');
-             menuMobile.classList.toggle('active');
-        });
-    </script>
-    <section class="header-1st-section">
-      <!-- Container para as duas imagens -->
-      <div class="section1-images">
-        <div class="image-container img-left">
-          <img class="section1-img-1" src="./assets/1section-img1.png" alt="Imagem 1 seção 1" />
+      document.getElementById('menu-icon').addEventListener('click', function() {
+          var menuMobile = document.getElementById('menu-mobile');
+          menuMobile.classList.toggle('active');
+      });
+  </script>
+
+<!-- SEÇÃO 1 - INÍCIO -->
+    <section class="image-section">
+        <div class="image-container">
+            <img src="./assets/1section-img1.png" alt="Imagem 1" class="image image-left">
         </div>
-        <div class="image-container img-right">
-          <img class="section1-img-2" src="./assets/1section-img2.png" alt="Imagem 2 seção 1" />
+        <div class="image-container">
+            <img src="./assets/1section-img2.png" alt="Imagem 2" class="image image-right">
         </div>
-      </div>
-    
-      <!-- Ícones sobrepostos às imagens -->
-      <img class="section1-tooth-icon" src="./assets/1section_tooth-icon.svg" alt="Ícone Dente" />
-      <img class="blue-bubble2-icon" src="./assets/blue_bubble2-icon.svg" alt="Bolha1" />
-      <img class="plus-icon" src="./assets/plus-icon.svg" alt="Ícone Mais-mais" />
-      <img class="blue-bubble1-icon" src="./assets/blue_bubble1-icon.svg" alt="Bolha2" />
+        <div class="element">
+            <img src="./assets/blue_bubble1-icon.svg" alt="">
+        </div>
+        <div class="element-2">
+            <img src="./assets/purple_bubble-icon.svg" alt="">
+        </div>
+        <div class="plus-icon">
+          <img src="./assets/plus-icon.svg">
+        </div>
+        <div class="section1-tooth-icon">
+          <img src="./assets/1section_tooth-icon.svg">
+        </div>
     </section>
-  </body>
+<!-- SEÇÃO 1 - FIM -->
+</body>
 </html>
