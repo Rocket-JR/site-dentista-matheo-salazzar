@@ -14,12 +14,19 @@
     <header>
         <nav>
            <div class="logo">
+
             <a href="#"><img src="./assets/header_logo.svg" alt=""></a>
+
+            <a href="#"><img src="./assets/DR-Matheo 1.svg" alt=""></a>
+
            </div>
               <div class="menu">
                 <ul>
                      <li><a href="#">Home</a></li>
+
                      <li><a href="#">Apresentação</a></li>
+      <li><a href="#Apresentação">Apresentação</a></li>
+
                      <li><a href="#">Serviços</a></li>
                      <li><a href="#">Localização</a></li>
                      <li><a href="#">Depoimentos</a></li>
@@ -29,7 +36,11 @@
                 </div>
 
                 <div class="icon">
+
                     <img src="./assets/header_tooth-icon.svg" alt="dente">
+
+                    <img src="./assets/Tooth.svg" alt="dente">
+
                 </div>
                 <i class="material-symbols-outlined" id="menu-icon">menu</i>
         </nav>
@@ -38,7 +49,11 @@
             <div class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
+
                     <li><a href="#">Apresentação</a></li>
+
+                    <li><a href="#Apresentação">Apresentação</a></li>
+
                     <li><a href="#">Serviços</a></li>
                     <li><a href="#">Localização</a></li>
                     <li><a href="#">Depoimentos</a></li>
@@ -48,6 +63,7 @@
             </div>
         </div>
     </header>
+
     <script>
       document.getElementById('menu-icon').addEventListener('click', function() {
           var menuMobile = document.getElementById('menu-mobile');
@@ -76,6 +92,54 @@
           <img src="./assets/1section_tooth-icon.svg">
         </div>
     </section>
-<!-- SEÇÃO 1 - FIM -->
+
+
+
+    <section class="image-section" >
+        <div class="image-container">
+            <img src="./assets/Rectangle 60.png" alt="Imagem 1" class="image image-left">
+        </div>
+        <div class="image-container">
+            <img src="./assets/Rectangle 29 (1).png" alt="Imagem 2" class="image image-right">
+        </div>
+
+        <div class="element">
+            <img src="./assets/Star 8.svg" alt="">
+        </div>
+
+        
+        <div class="element-2">
+            <img src="./assets/Star 4.png" alt="">
+        </div>
+
+    </section>
+
+
+    <section class="second-section" id="Apresentação">
+        <main>
+          <h1>Ola, sou o DR. Matheo Sallazar</h1>
+          <h4>
+            Graduado em Odontologia pela Universidade Federal de São Paulo (UFSP) – 2010 a 2014, São Paulo/SP. <br>
+            Especialista em Implantodontia pela Faculdade Brasileira de Odontologia Avançada (FBOA) – 2016 a 2018, Campinas/SP.
+          </h4>
+        </main>
+      
+        <div class="hexagon">
+          <img src="./assets/Ativo 1.svg" alt="dentista" >
+        </div>
+      
+        <div class="background-pattern"></div>
+      </section>
+
+
+
+
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var menuMobile = document.getElementById('menu-mobile');
+            menuMobile.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>
