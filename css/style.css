@@ -256,6 +256,96 @@ h4{
   transform: translateY(0);
 }
 
+.fifth-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  height: 600px;
+  width: 100%;
+}
+
+h2{
+  font-size: 32px;
+}
+
+.highlight{
+  color: #15127A;
+}
+
+.slider-container {
+  width: 95%;
+  overflow: hidden;
+  cursor: context-menu;
+  margin-top: 70px;
+}
+
+.slider {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+  user-select: none;
+}
+
+.slider::-webkit-scrollbar{
+  display: none;
+}
+.card {
+  min-width: 317px;
+  height: 317px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.card .elipse{
+  width: 81px;
+  height: 81px;
+  position: absolute;
+  margin-top: -35px;
+  margin-left: -25px;
+}
+
+.card img {
+  width: 33px;
+  height: 33px;
+  margin-top: -10px;
+  position: relative;
+}
+
+.card h3 {
+  color: #15127A;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p {
+  color: #000;
+  margin-top: 15px;
+  max-width: 244px;
+  overflow: hidden;
+  text-align: justify;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow-y: hidden;
+}
+
+.five_element{
+  position: absolute;
+  right: 187vh;
+  top: 10vh;
+}
 @media (max-width: 768px) {
   nav ul {
     display: none;
