@@ -268,6 +268,8 @@ h4{
 
 h2{
   font-size: 32px;
+  align-items: center;
+  justify-content: center;
 }
 
 .highlight{
@@ -275,10 +277,11 @@ h2{
 }
 
 .slider-container {
-  width: 95%;
+  width: 85%;
   overflow: hidden;
   cursor: context-menu;
   margin-top: 70px;
+  position: relative;
 }
 
 .slider {
@@ -297,6 +300,30 @@ h2{
 .slider::-webkit-scrollbar{
   display: none;
 }
+
+.btn{
+  position: absolute;
+  margin-top: 90px;
+  left: 0.5%;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-1{
+  position: absolute;
+  margin-top: 90px;
+  right: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.btn .vector-btn,
+.btn-1 .vector-btn{
+  position: relative;
+  transform: translateY(-118%);
+  left: -52%;
+}
+
 .card {
   min-width: 317px;
   height: 317px;
@@ -344,7 +371,32 @@ h2{
 .five_element{
   position: absolute;
   right: 187vh;
+  top: -7vh;
+}
+.five_element-2{
+  position: absolute;
+  left: 187vh;
+  top: -25vh;
+}
+.five_element-3{
+  position: absolute;
+  right: 170vh;
+  top: 5vh;
+}
+.five_element-4{
+  position: absolute;
   top: 10vh;
+  right: 130vh;
+}
+.five_element-4-1{
+  position: absolute;
+  top: 90vh;
+  right: 50vh;
+}
+.five_element-5{
+  position: absolute;
+  top: 4vh;
+  right: 30vh;
 }
 @media (max-width: 768px) {
   nav ul {
