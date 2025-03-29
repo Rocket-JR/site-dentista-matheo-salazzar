@@ -535,3 +535,160 @@ h4{
   height: auto;
   left: 80%;
 }
+
+.quarta-section{
+  display: flex;
+  align-items: center;
+  margin: 0 4%;
+  gap: 2%;
+}
+
+.quarta-section-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 2% 2%;
+  max-width: 1200px; 
+  width: 100%;
+}
+
+.quarta-section-caixa1,
+.quarta-section-caixa2,
+.quarta-section-caixa3{
+  background-color: #15127A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 35px;
+  width: 30%; 
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-grow: 1;
+}
+
+.quarta-section-caixa2{
+  background-color: #2589DB;
+}
+
+.quarta-section-caixa3{
+  background-color: #E3F2F9;
+  color: #2589DB;
+}
+
+.quarta-section-icone,
+.quarta-section-icone3{
+  width: 60px; /* Tamanho uniforme para os ícones */
+  height: 60px;
+  margin-bottom: 10px; /* Espaçamento igual para todos */
+}
+
+.quarta-section-icone3{
+  position: relative;
+  width: 80px; /* Tamanho do círculo */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.quarta-section-circulo {
+  width: 100%; /* O círculo fica no tamanho original */
+  position: relative;
+  z-index: 1;
+}
+
+.quarta-section-retangulo-h {
+  width: 50px; /* Ajuste para caber dentro do círculo */
+  position: absolute;
+  top: 39%;
+  z-index: 3;
+}
+
+.quarta-section-retangulo-v {
+  width: 18px; /* Ajuste para caber dentro do círculo */
+  position: absolute;
+  top: 17%;
+  z-index: 2;
+}
+
+.quarta-section-caixa-titulo{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.quarta-section-caixa-paragrafo{
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+  margin-inline: 30px;
+}
+
+.quarta-section-botao{
+  display: flex;
+  /*margin-top: auto;*/
+}
+
+.quarta-section-caixa-botao1,
+.quarta-section-caixa-botao2,
+.quarta-section-caixa-botao3,
+.quarta-section-caixa-more,
+.quarta-section-caixa-more3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  background-color: #15127A;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px;
+}
+
+.quarta-section-caixa-botao1{
+  background-color: #2589DB;
+}
+
+.quarta-section-caixa-more{
+  background-color: #8EB8E5;
+}
+
+.quarta-section-caixa-more3{
+  background-color: #2589DB;
+}
+
+.quarta-section-botao:hover{
+  transform: translateY(-5px);
+  background-color: white;
+  color: #15127A;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .quarta-section-caixa1,
+  .quarta-section-caixa2,
+  .quarta-section-caixa3 {
+    width: 45%; /* Duas por linha */
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quarta-section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quarta-section-caixa1,
+  .quarta-section-caixa2,
+  .quarta-section-caixa3 {
+    width: 100%; /* Fica uma abaixo da outra */
+    margin-top: 20px;
+  }
+}
