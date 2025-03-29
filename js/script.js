@@ -20,3 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+
+const prevButton = document.querySelector('.btn');
+const nextButton = document.querySelector('.btn-1');
+const slider = document.querySelector('.slider');
+
+prevButton.addEventListener('click', () => {
+    slider.scrollLeft -= 700; 
+});
+
+nextButton.addEventListener('click', () => {
+    slider.scrollLeft += 700; 
+});
