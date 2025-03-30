@@ -151,22 +151,22 @@ main{
   z-index: 2;
 }
 
-h1{
-  font-size: 70px;
+h1 {
+  font-size: clamp(32px, 6vw, 70px); 
   color: #15127A;
   font-weight: 800;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
-h4{
-  font-size: 20px;
+h4 {
+  font-size: clamp(16px, 3vw, 20px);
   color: #2589DB;
-  width: 70%;
+  width: 100%;
+  max-width: 600px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 1.5;
   margin-bottom: 20px;
 }
-
 .image-section {
   display: flex;
   justify-content: center;
@@ -535,7 +535,6 @@ h4{
   height: auto;
   left: 80%;
 }
-
 .quarta-section{
   display: flex;
   align-items: center;
@@ -834,4 +833,116 @@ h2{
   position: absolute;
   top: 4vh;
   right: 30vh;
+}
+.sexta-section{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  padding: 0px 0px;
+  z-index: 2;
+  
+}
+.sexta-tittle{
+display: flex;
+justify-content: center;
+align-items: center;
+color: #15127A;
+font-family: "Montserrat", sans-serif;
+}
+.conteudo{
+display: flex;
+justify-content: center;
+z-index: 2;
+}
+
+.mapa{
+  width: 600px;
+  height: 400px;
+  z-index: 2;
+  
+}
+.predio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.background-pattern {
+  width: 100%;
+  height: 60vh;
+  background-image: 
+  url("data:image/svg+xml,%3Csvg width='30' height='30' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='15' y='18' font-size='24' font-weight='bold' text-anchor='middle' fill='%234a90e2'%3E%2B%3C/text%3E%3C/svg%3E");
+  background-size: 20x 20px;
+  opacity: 0.3;
+  z-index: 0;
+  position: absolute;
+}
+
+.text-sexta{
+  justify-content: center;
+  color: #1E3A8A;
+
+}
+.text2-sexta{
+  justify-content: center;
+  color: #1E3A8A;
+
+}
+/*.retangulo-sexta{
+  position: absolute;
+  left: -1px; 
+  z-index: 2;
+}*/
+
+
+@media (max-width: 1024px) {
+  .conteudo {
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens */
+    text-align: center;
+    width: 100%; /* Garante que ocupa toda a largura */
+    max-width: 90%;
+    margin: 0 auto; /* Centraliza no meio da tela */
+  }
+
+  .predio img {
+    max-width: 80%; /* Ajusta o tamanho da imagem */
+    height: auto;
+  }
+
+  .mapa {
+    width: 90%; /* Mantém o mapa responsivo */
+    max-width: 600px;
+    height: auto;
+  }
+
+  .text-sexta, 
+  .text2-sexta {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mapa {
+    width: 90%;
+    height: auto;
+  }
+
+  .sexta-tittle {
+    font-size: 40px;
+  }
+
+  .text-sexta, 
+  .text2-sexta {
+    font-size: 16px;
+    width: 90%;
+  }
 }
