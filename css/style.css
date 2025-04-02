@@ -700,6 +700,7 @@ h4 {
   gap: 4rem;
   height: 600px;
   width: 100%;
+  justify-content: space-around;
 }
 
 h2{
@@ -944,5 +945,15 @@ z-index: 2;
   .text2-sexta {
     font-size: 16px;
     width: 90%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .five_element-5, .vector-btn, .elipse-btn{
+    display: none;
+  }
+  .slider-container{
+    margin-top: 10px;
+    width: 45%;
   }
 }
