@@ -1101,7 +1101,7 @@ z-index: 2;
   gap: 100px;
   column-gap: 0px;
   justify-items: center;
-  width: 1200px;
+  max-width: 1200px;
   margin-top: 60px;
   margin-left: 50px;
   margin-right: 80px;
@@ -1205,16 +1205,60 @@ z-index: 2;
 
 @media (max-width: 768px) {
   .depoimentos {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px; /* Reduz o gap para uma tela menor */
+    margin-left: 20px; /* Ajuste as margens */
+    margin-right: 20px;
   }
 
   .depoimento_individual {
-      width: 90%;
+    width: 90%; /* Aumenta a largura dos depoimentos em telas menores */
+    max-width: none; /* Remove o limite de largura */
   }
 
   .usuario img {
-      left: 50%;
-      transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .circulo {
+    width: 30px;
+    height: 40px;
+    margin-left: -35px;
+  }
+
+  .texto {
+    width: 100%; /* Torna o texto mais flexível */
+    left: 20px; /* Ajuste o posicionamento do texto */
+    right: 20px;
+  }
+
+  .user-text {
+    top: 150px;
+    left: 20px;
+  }
+
+  .user-text h4 {
+    font-size: 14px;
+  }
+
+  .user-text .cliente {
+    font-size: 12px;
+  }
+
+  /* Ajuste do posicionamento das decorações */
+  .Tooth {
+    right: 20px;
+  }
+
+  .Star {
+    top: -60px;
+    right: 20px;
+    width: 80px; /* Ajuste a largura das estrelas */
+  }
+
+  .enfeite, .enfeite2, .enfeite3 {
+    width: 80px; /* Reduz o tamanho dos enfeites */
   }
 }
 
@@ -1393,8 +1437,8 @@ z-index: 2;
 .Tooth {
   display: flex;
   position: absolute;
-  right: 380px; /* Alterado para mover para a direita */
-  top: 40px;
+  margin-left: 1300px; 
+  top: 35px;
   width: 160px;
 }
 
@@ -1418,7 +1462,7 @@ z-index: 2;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-top: -20px;
-  margin-left: 100px;
+  margin-left: 10px;
   
 }
 
@@ -1426,7 +1470,7 @@ z-index: 2;
   position: relative;
   width: 850px;
   margin-top: 70px;
-  margin-right: 100px;
+  margin-right: 120px;
 }
 
 .circulo {
@@ -1474,16 +1518,19 @@ z-index: 2;
 .texto-depoimento {
   text-align: justify;
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 30px;
   right: 20px;
-  width: 570px;
+  width: 550px;
+  color: #15127a;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
 
 .texto p {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  color: #15127A;
+  color: #15127a;
   margin-top: -40px;
 }
 
